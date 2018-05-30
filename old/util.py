@@ -1,10 +1,10 @@
 import smtplib
 
 def sendMail(titulo, texto):
-    gmail_user = "resultadosmeus@gmail.com"
-    gmail_pwd = "SenhaDosResultados"
-    FROM = 'resultadosmeus@gmail.com'
-    TO = ['tmfilho@gmail.com'] #must be a list
+    gmail_user = 'your_email@gmail.com'
+    gmail_pwd = 'your_password'
+    FROM = 'your_email@gmail.com'
+    TO = ['your_email@gmail.com'] #must be a list
     SUBJECT = titulo
     TEXT = texto
     # Prepare actual message
@@ -21,5 +21,5 @@ def sendMail(titulo, texto):
         server.close()
         print 'successfully sent the mail'
     except:
-        print "failed to send mail"
+        print 'failed to send mail'
         
